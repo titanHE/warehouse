@@ -9,7 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/counter")
+@RequestMapping("/product")
 public class ProductController {
 
     @Autowired
@@ -20,7 +20,7 @@ public class ProductController {
         return ResponseEntity.status(HttpStatus.CREATED).body(productService.add(product));
     }
 
-    @PostMapping("/remove/{id}")
+    @DeleteMapping("/remove/{id}")
     public ResponseEntity<Message> removeProduct(@PathVariable Long id) {
         return ResponseEntity.ok().body(new Message(productService.remove(id)));
     }
