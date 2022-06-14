@@ -1,2 +1,2 @@
-# warehouse
+# Warehouse
 Problem for DevOps question
