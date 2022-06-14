@@ -5,12 +5,19 @@ A user can add or remove products from the warehouse by calling the correct endp
 
 ## API endpoints
 
-1. POST /product/add - add a product to warehouse
+1. POST /product/add - add a product to warehouse with json in following format
+``` json
+{
+  "name": "bicycle",
+  "cost": 1000
+}
 
-
+```
+\
 2. DELETE /product/remove/{id} - remove product with given id
-
-
+\
+\
+\
 3. GET /system/status - returns a message 'status:UP'
 
 ---
